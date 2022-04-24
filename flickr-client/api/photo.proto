@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package photo;
+
+service PhotoService {
+  rpc GetPhoto (PhotoByTags)  returns (stream Photo) {};  
+}
+
+message PhotoByTags {
+  string client = 1;
+  int32 limit = 2;  
+  string tags = 3;
+}
+
+message Photo {
+  string title = 1;
+  string link = 2;
+  string media = 3;
+  string date_taken = 4;
+  string description = 5;
+  string published = 6;
+  string author = 7;
+  string author_id = 8;
+  string tags = 9;  
+}
