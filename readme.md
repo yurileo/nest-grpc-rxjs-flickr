@@ -14,4 +14,5 @@
 Как пример - будут работать параллельно и независимо друг от друга два клиента.
 
 `npx nestjs-command russia 5`
+
 `npx nestjs-command instagram 3`
